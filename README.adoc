@@ -1,31 +1,64 @@
-# url-shortening-microservice
-## URL Shortening Microservice in Java Spring Boot
+= url-shortening-microservice
 
-### Developed By [Shubham Agarwal](https://beagarwal.com)
+== URL Shortening Microservice in Java Spring Boot
 
-### - Steps for running in local machine
+== Developed By https://beagarwal.com[Shubham Agarwal]
 
-<ol>
-    <li>Fork this repo.</li>
-    <li>Or clone this repo into your local by following link:<br>
-        git clone git@github.com:BeAgarwal/url-shortening-microservice.git</li>
-    <li>Make sure you have all dependencies installed which are used in this project.</li>
-</ol>
+=== Requirements:
 
-<h3>Requirements:</h3>
-<ol>
-    <li>Java 1.8</li>
-    <li>Spring 2.4.5</li>
-    <li>H2 Database</li>
-</ol>
-<h3>Dependencies</h3>
+* Java 1.8
+* Spring 2.4.5
+* H2 Database
+
+=== Dependencies:
+[source, xml]
 ----
-        <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>runtime</scope>
+</dependency>
+
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>20.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.0</version>
+</dependency>
 ----
+
+=== Steps for running in local machine
+
+    * Fork this repo.
+    * Or clone this repo into your local by following link:
+
+        git clone git@github.com:BeAgarwal/url-shortening-microservice.git
+
+    * Make sure you have all dependencies installed which are used in this project.
+    * After that, Run your application.
+    * While running, you should get these following logs in your terminal:
+
+image::assets/screenshots/logs.png[]
+
+    * If not, add these properties in your ``application.properties``
+
+        spring.h2.console.enabled=true
+        spring.h2.console.path=/h2-console
+
+    * A
+
