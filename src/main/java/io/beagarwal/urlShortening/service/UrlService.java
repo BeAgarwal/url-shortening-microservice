@@ -1,5 +1,7 @@
-package io.beagarwal.urlShortening.services;
+package io.beagarwal.urlShortening.service;
 
+import io.beagarwal.urlShortening.model.Url;
+import io.beagarwal.urlShortening.model.UrlDto;
 import org.springframework.stereotype.Service;
 
 @Service
