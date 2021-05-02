@@ -2,7 +2,6 @@ package io.beagarwal.urlShortening.model;
 
 import javax.persistence.Entity;
 
-@Entity
 public class UrlDto {
 
     private String url;
