@@ -1,2 +1,5 @@
-package io.beagarwal.urlShortening.model;public class UrlResponseDto {
+package io.beagarwal.urlShortening.model;
+
+public class UrlResponseDto {
+
 }
